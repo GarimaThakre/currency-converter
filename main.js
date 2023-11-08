@@ -7,7 +7,6 @@ const populate = async (value, currency) => {
   let response = await fetch(url);
   let rJson = await response.json();
   document.querySelector(".output").style.display = "block";
-  document.querySelector(".output").style.color = "white";
 
   for (let key of Object.keys(rJson["data"])) {
     myStr += `<tr>
